@@ -1,38 +1,169 @@
-.App {
+* {
+  width: 100%;
+  height: 100%;
+}
+
+table {
+  display: block;
+}
+tbody {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  align-content: center;
+}
+tr {
+  display: flex;
+  padding: 5px 0;
+  flex-direction: row;
+  width: fit-content;
+  border-bottom: 2px rgb(84, 31, 112) solid;
+}
+td{
+  display: flex;
+  height: 100%;
+  width: fit-content;
+  margin: 0 5px;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.wrapper {
+  background-color: #0e101c;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.user-data {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  color:aliceblue;
+  border-bottom: 2px rgb(64, 48, 89) solid;
+  margin: 5px;
+  padding: 20px;
+}
+
+.navbar {
+  top: 0;
+  width: 100%;
+  height: 50px;
+  position:static;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-bottom: 2px rgb(72, 25, 146) solid;
+  background-color: rgb(64, 48, 89);
+}
+.btn-logout {
+  display: block;
+  width: auto;
+  height: 40px;
+  margin-right: 5px;
+  background-color: #ec5990;
+  border: none;
+  border-radius: 7px;
+  color: aliceblue;
+  font-size: 16px;
+}
+.btn-logout:hover {
+  background-color: #bf1650;
+  transition: 0.5s all;
+}
+
+form, .form-group {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 15px 5px;
+  justify-content: center;
+  align-items: center;
+
+  width: 25rem;
+  max-width: 40rem;
+  
+  min-height: 100px;
+  height: 30%;
+  color:aliceblue;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.my-input, .pf-c-form-control {
+  border-radius: 7px;
+  
+  max-width: 100%;
+  width: 70%;
+
+  height: 50%;
+  min-height: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+  border: none;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+.pf-c-form-control {
+  width: 300px;
+  height: 170px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-submit, .pf-c-button {
+  margin: 40px auto;
+  width: 50%;
+  min-width: 10%;
+  height: 35%;
+  min-height: 20%;
+  background-color: #ec5990;
+  border: none;
+  border-radius: 7px;
+  color: aliceblue;
+  font-size: 16px;
+  letter-spacing: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-submit:hover {
+  background-color: #bf1650;
+  transition: 0.5s all;
+}
+.pf-c-button{
+  width: 130px;
+  height: 150px;
+}
+
+span {
+  font-weight: bolder;
+  color:aliceblue;
+}
+
+body {
+  color: aliceblue;
+  /* position: relative; */
+  top: 60;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+label {
+  color: aliceblue;
+}
+.kc-header, .login-pf-page-header, .login-pf-header {
+  height: 20%;
+}
+.card-pf{
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
-
-.App-link {
-  color: #61dafb;
+.kc-page-title{
+  margin-left: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pf-c-form-control{
+  border-color: #bf1650;
+}
+.kc-page-title, .kc-header-wrapper{
+  display: hidden;
 }
